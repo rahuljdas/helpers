@@ -1,0 +1,21 @@
+python -m venv env	#install virtual environment
+source env/Scripts/activate	# Activate virtual environment
+pip install django  # Install Django
+
+django-admin startproject project_name # Start Project
+python manage.py startapp testdb #Run the following command to start your first app
+
+#Setting up a database server#
+Create Database "MyDB" in PgAdmin for Postgres
+Navigate to settings.py
+Change the below
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'your_db_name', 
+        'USER': 'postgres',
+        'PASSWORD': 'your_db_password',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
+    }
+}
