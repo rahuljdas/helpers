@@ -1,14 +1,15 @@
 python -m venv env	#install virtual environment
 source env/Scripts/activate	# Activate virtual environment
 pip install django  # Install Django
-pip install psycopg2
+pip install psycopg2    # Install postgre database connector
 
 django-admin startproject project_name # Start Project
 python manage.py startapp testdb #Run the following command to start your first app
 
 #Setting up a database server#
 Create Database "MyDB" in PgAdmin for Postgres
-Navigate to settings.py
+
+#Navigate to settings.py#
 Change the below
 DATABASES = {
     'default': {
