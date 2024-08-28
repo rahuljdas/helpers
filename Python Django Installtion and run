@@ -1,6 +1,7 @@
 python -m venv env	#install virtual environment
 source env/Scripts/activate	# Activate virtual environment
 pip install django  # Install Django
+python -m pip install Django==5.1
 pip install psycopg2    # Install postgre database connector
 
 django-admin startproject project_name # Start Project
